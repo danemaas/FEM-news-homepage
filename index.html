@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <!-- BOOTSTRAP CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <header class="container">
+      <nav class="nav-bar">
+        <img src="assets/images/logo.svg" alt="" class="logo" />
+        <div class="nav-menu" id="navMenu">
+          <ul class="nav-list" id="navList">
+            <li class="nav-item" id="navItem">
+              <a href="#home" class="nav-link" id="navLink">Home</a>
+            </li>
+            <li class="nav-item" id="navItem">
+              <a href="#new" class="nav-link" id="navLink">New</a>
+            </li>
+            <li class="nav-item" id="navItem">
+              <a href="#popular" class="nav-link" id="navLink">Popular</a>
+            </li>
+            <li class="nav-item" id="navItem">
+              <a href="#trending" class="nav-link" id="navLink">Trending</a>
+            </li>
+            <li class="nav-item" id="navItem">
+              <a href="#category" class="nav-link" id="navLink">Categories</a>
+            </li>
+          </ul>
+          <div class="nav-close" id="navClose">
+            <img src="assets/images/icon-menu-close.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="nav-toggle" id="navToggle">
+          <img src="assets/images/icon-menu.svg" alt="" />
+        </div>
+      </nav>
+    </header>
+
+    <!-- OVERLAY FADED BLACK BACKGROUND UPON NAVMENU TOGGLE -->
+    <div class="overlay" id="overlay"></div>
+
+    <main class="container">
+      <!-- TOP SECTION OF THE PAGE -->
+      <section class="top-row row row-cols-1 row-cols-md-2">
+        <div class="article-col col col-lg-8">
+          <div class="img-container row"></div>
+          <div class="row row-cols-1 row-cols-md-2 text-container">
+            <div class="headlin-container col">
+              <h1 class="headline">The Bright Future of Web 3.0?</h1>
+            </div>
+            <div class="text-container col">
+              <p class="article">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button class="button">Read more</button>
+            </div>
+          </div>
+        </div>
+        <div class="new-col col col-lg-4">
+          <div class="wrapper">
+            <h1 class="new-title">New</h1>
+            <div class="new-article">
+              <a class="article-title">Hydrogen VS Electric Cars</a>
+              <span class="article-text">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </span>
+            </div>
+            <hr class="borderline" />
+            <div class="new-article">
+              <a class="article-title">The Downsides of AI Artistry</a>
+              <span class="article-text">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </span>
+            </div>
+            <hr class="borderline" />
+            <div class="new-article">
+              <a class="article-title">Is VC Funding Drying Up?</a>
+              <span class="article-text">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BOTTOM SECTION OF THE PAGE -->
+      <section
+        class="bottom-row row row-cols-1 row-cols-md-2 row-cols-xl-3 gap-4 gap-md-0 flex-wrap mb-5"
+      >
+        <div
+          class="card border-0 d-flex flex-row gap-3 mb-0 mb-md-3 mb-xl-0 h-auto col"
+        >
+          <img
+            src="assets/images/image-retro-pcs.jpg"
+            alt=""
+            class="image w-25"
+          />
+          <div class="card-article-wrapper">
+            <h3 class="number fw-bold">01</h3>
+            <a class="card-title fw-bold">Reviving Retro PCs</a>
+            <p class="card-text">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <div
+          class="card border-0 d-flex flex-row gap-3 mb-0 mb-md-3 mb-xl-0 h-auto col"
+        >
+          <img
+            src="assets/images/image-top-laptops.jpg"
+            alt=""
+            class="image w-25"
+          />
+          <div class="card-article-wrapper">
+            <h3 class="number fw-bold">02</h3>
+            <a class="card-title fw-bold">Top 10 Laptops of 2022</a>
+            <p class="card-text">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </div>
+        <div
+          class="card border-0 d-flex flex-row gap-3 mb-0 mb-md-3 mb-xl-0 h-auto h-auto col"
+        >
+          <img
+            src="assets/images/image-gaming-growth.jpg"
+            alt=""
+            class="image w-25"
+          />
+          <div class="card-article-wrapper">
+            <h3 class="number fw-bold">03</h3>
+            <a class="card-title fw-bold">The Growth of Gaming</a>
+            <p class="card-text">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Daniel</a>.
+    </footer>
+  </body>
+  <!-- BOOTSTRAP JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- MAIN JS -->
+  <script src="script.js"></script>
+</html>
